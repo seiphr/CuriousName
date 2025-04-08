@@ -111,14 +111,25 @@ If your name equals a prime number, please come to the foyer during the interval
 
 ## Check Your Calculation
 
+
+<style>
+    /* Style for the form and the result text */
+    form {
+        margin-bottom: 20px;
+    }
+    .result {
+        margin-top: 20px;
+        color: red;
+        font-weight: bold;
+    }
+</style>
 <form onsubmit="handleSubmit(event)">
     <label for="name">Enter your full name:</label>
     <input type="text" id="name" name="name" placeholder="Scooby Doo">
     <button type="submit">Submit</button>
     <p></p>
+    <div id="result" class="result" style="display: none;"></div>
 </form>
-
-<div id="result" class="result" style="display: none;"></div>
 
 _Note: Only use characters A-Z (no umlauts, special characters, or numbers). Enter your full name (first and last name)._
 
