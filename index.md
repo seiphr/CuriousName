@@ -135,6 +135,7 @@ S=19, C=3, O=15, O=15, B=2, Y=25, D=4, O=15, O=15
         font-weight: bold;
     }
 </style>
+_Only use characters A-Z (no umlauts, special characters, or numbers). Enter your full name (first and last name)._
 <form onsubmit="handleSubmit(event)">
     <label for="name">Enter your full name:</label>
     <input type="text" id="name" name="name" placeholder="Scooby Doo">
@@ -142,8 +143,6 @@ S=19, C=3, O=15, O=15, B=2, Y=25, D=4, O=15, O=15
     <p></p>
     <div id="result" class="result" style="display: none;"></div>
 </form>
-
-_Note: Only use characters A-Z (no umlauts, special characters, or numbers). Enter your full name (first and last name)._
 
 * * *
 
