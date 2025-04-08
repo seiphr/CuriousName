@@ -118,6 +118,8 @@ If your name equals a prime number, please come to the foyer during the interval
     <p></p>
 </form>
 
+<div id="result" class="result" style="display: none;"></div>
+
 _Note: Only use characters A-Z (no umlauts, special characters, or numbers). Enter your full name (first and last name)._
 
 * * *
@@ -176,19 +178,19 @@ _*Subject to availability._
             sum += letterToNumber[element];
         });
 
-        // Your custom logic here
+        // Display the result text
+        var resultDiv = document.getElementById('result');
+
         if (isPerfectNumber(sum)) {
-            alert("Your name equals " + sum + "\r\n\r\nWhich is not a prime number. BUT it is a PERFECT NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).\r\nPerfect numbers are really cool. Perfect numbers are positive integers that equal the sum of their proper divisors (excluding itself). For instance, 6 has proper divisors 1, 2, and 3, and 1 + 2 + 3 = 6.");
+            resultDiv.textContent = "Your name equals " + sum + "\r\n\r\nWhich is not a prime number. BUT it is a PERFECT NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).\r\nPerfect numbers are really cool. Perfect numbers are positive integers that equal the sum of their proper divisors (excluding itself). For instance, 6 has proper divisors 1, 2, and 3, and 1 + 2 + 3 = 6.";
         }
         else if (isPrime(sum)) {
-            alert("Your name equals " + sum + "\r\n\r\nWhich is a PRIME NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).");
+            resultDiv.textContent = "Your name equals " + sum + "\r\n\r\nWhich is a PRIME NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).";
         }
         else {
-            alert("Your name equals " + sum + "\r\n\r\nWhich is unfortunately not a prime number.");
+            resultDiv.textContent = "Your name equals " + sum + "\r\n\r\nWhich is unfortunately not a prime number.";
         }
-        
-        // Optionally, you can submit the form programmatically
-        // event.target.submit();
+        resultDiv.style.display = 'block';
     }
 
     function removeNonLetters(str) {
