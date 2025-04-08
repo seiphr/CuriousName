@@ -20,7 +20,7 @@ Add up the numbers and see if they make a prime number. Like Scooby Doo (113), o
 
 If your name equals a prime number, please come to the foyer during the interval or after the show, and ask one of the ushers there for a Curious Prize. We will double-check your calculation for you 🙂
 
-### Number of the Alphabet
+### Numbers of the Alphabet
 <style>
   .table-container {
     width: 100%;
@@ -219,10 +219,10 @@ _*Prizes are subject to availability._
         var isPerfectNumber = isPerfect(sum);
         var isPrimeNumber = isPrime(sum);
         if (isPerfectNumber) {
-            resultDiv.textContent = "Your name equals " + sum + " Which is not a prime number. BUT it is a PERFECT NUMBER!!! Talk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt). Perfect numbers are really cool. Perfect numbers are positive integers that equal the sum of their proper divisors (excluding itself). For instance, 6 has proper divisors 1, 2, and 3, and 1 + 2 + 3 = 6.";
+            resultDiv.textContent = "Your name equals " + sum + " which is not a prime number. BUT it is a PERFECT NUMBER!!! Talk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt). Perfect numbers are really cool. Perfect numbers are positive integers that equal the sum of their proper divisors (excluding themself). For instance, 6 has proper divisors 1, 2, and 3, and 1 + 2 + 3 = 6.";
         }
         else if (isPrimeNumber) {
-            resultDiv.textContent = "Your name equals " + sum + " Which is a PRIME NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).";
+            resultDiv.textContent = "Your name equals " + sum + " which is a PRIME NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).";
         }
         else {
             resultDiv.textContent = "Your name equals " + sum + " which is unfortunately not a prime number.";
