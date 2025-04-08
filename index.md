@@ -2,23 +2,38 @@
 layout: default
 ---
 
-# Curious Names
-
 > ‘I think prime numbers are like life. They are very logical but you could never work out the rules, even if you spent all your time thinking about them.’
 > 
 > _Christopher John Francis Boone_
 
-## Win a Prize if Your Name is a Prime Number!
+# Win a Prize if Your Name is a Prime Number!
 
 Every day, when Christopher arrives at the Theater im Seefeld, he chooses two seats in each row at random as his selected prime number seats. Anyone sitting in a selected prime number seat has the chance to win a prize!*
 
 Prime numbers can only be divided by themselves and 1. 2 is the first prime number because 1 can only be divided by 1. There are no known formulas to help discover new prime numbers, which is maybe why Christopher finds them so interesting…
 
-### How to Play
+## How to Play
 
 Give each letter in your name a value from 1 to 26 (`a=1`, `b=2`, etc.)
 
-<table>
+<!-- Start of the table with custom CSS -->
+<style>
+  .custom-table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .custom-table th, .custom-table td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+  }
+  .custom-table th {
+    background-color: #f2f2f2;
+  }
+</style>
+
+<table class="custom-table">
     <tr>
         <th>A</th>
         <th>B</th>
@@ -79,7 +94,7 @@ Give each letter in your name a value from 1 to 26 (`a=1`, `b=2`, etc.)
 
 Add up the numbers and see if they make a prime number. Like Scooby Doo (113), or Sherlock Holmes (163), or Doctor Watson (167).
 
-#### Example (Scooby Doo)
+### Example (Scooby Doo)
 
 > S=19, C=3, O=15, O=15, B=2, Y=25, D=4, O=15, O=15
 >
@@ -87,7 +102,7 @@ Add up the numbers and see if they make a prime number. Like Scooby Doo (113), o
 
 If your name equals a prime number, please come to the foyer during the interval or after the show, and ask one of the ushers there for a Curious Prize. We will double-check your calculation for you 🙂
 
-### Check Your Calculation
+## Check Your Calculation
 
 <form onsubmit="handleSubmit(event)">
     <label for="name">Enter your full name:</label>
