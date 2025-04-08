@@ -103,9 +103,11 @@ If your name equals a prime number, please come to the foyer during the interval
 
 ### Example (Scooby Doo)
 
-> S=19, C=3, O=15, O=15, B=2, Y=25, D=4, O=15, O=15
->
-> `19 + 3 + 15 + 15 + 2 + 25 + 4 + 15 + 15 = 113`
+```
+S=19, C=3, O=15, O=15, B=2, Y=25, D=4, O=15, O=15
+
+`19 + 3 + 15 + 15 + 2 + 25 + 4 + 15 + 15 = 113`
+```
 
 113 is a prime number, so Scooby Doo would win a prize!
 
@@ -195,7 +197,7 @@ _*Prizes are subject to availability._
         // Display the result text
         var resultDiv = document.getElementById('result');
 
-        var isPerfectNumber = isPerfectNumber(sum);
+        var isPerfectNumber = isPerfect(sum);
         var isPrimeNumber = isPrime(sum);
         if (isPerfectNumber) {
             resultDiv.textContent = "Your name equals " + sum + "\r\n\r\nWhich is not a prime number. BUT it is a PERFECT NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).\r\nPerfect numbers are really cool. Perfect numbers are positive integers that equal the sum of their proper divisors (excluding itself). For instance, 6 has proper divisors 1, 2, and 3, and 1 + 2 + 3 = 6.";
@@ -237,7 +239,7 @@ _*Prizes are subject to availability._
         return true;
     }
 
-    function isPerfectNumber(num) {
+    function isPerfect(num) {
         // A perfect number must be greater than 1
         if (num <= 1) return false;
 
