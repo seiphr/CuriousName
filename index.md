@@ -83,7 +83,7 @@ Add up the numbers and see if they make a prime number. Like Scooby Doo (113), o
 
 > S=19, C=3, O=15, O=15, B=2, Y=25, D=4, O=15, O=15
 >
-> `19+3+15+15+2+25+4+15+15 = 113`
+> `19 + 3 + 15 + 15 + 2 + 25 + 4 + 15 + 15 = 113`
 
 If your name equals a prime number, please come to the foyer during the interval or after the show, and ask one of the ushers there for a Curious Prize. We will double-check your calculation for you 🙂
 
