@@ -112,20 +112,6 @@ If your name equals a prime number, please come to the foyer during the interval
     </table>
 </div>
 
-<script>
-    const tableBody = document.querySelector('table tbody');
-    let number = 1;
-
-const primeRow = document.getElementById('prime-row');
-    for (let i = 2; i <= 500; i++) {
-        if (isPrime(i)) {
-            const cell = document.createElement('td');
-            cell.textContent = i;
-            primeRow.appendChild(cell);
-        }
-    }
-</script>
-
 ### Example (Scooby Doo)
 
 ```
@@ -199,6 +185,15 @@ _*Prizes are subject to availability._
         Y: 25,
         Z: 26
     };
+
+    const primeRow = document.getElementById('prime-row');
+    for (let i = 2; i <= 500; i++) {
+        if (isPrime(i)) {
+            const cell = document.createElement('td');
+            cell.textContent = i;
+            primeRow.appendChild(cell);
+        }
+    }
 
     function handleSubmit(event) {
         // Prevent the default form submission behavior
