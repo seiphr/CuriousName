@@ -21,6 +21,7 @@ Give each letter in your name a value from 1 to 26 (`a=1`, `b=2`, etc.)
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
+    overflow-x: auto;
   }
   .custom-table th, .custom-table td {
     border: 1px solid black;
