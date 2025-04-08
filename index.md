@@ -99,13 +99,15 @@ Give each letter in your name a value from 1 to 26 (`a=1`, `b=2`, etc.)
 
 Add up the numbers and see if they make a prime number. Like Scooby Doo (113), or Sherlock Holmes (163), or Doctor Watson (167).
 
+If your name equals a prime number, please come to the foyer during the interval or after the show, and ask one of the ushers there for a Curious Prize. We will double-check your calculation for you 🙂
+
 ### Example (Scooby Doo)
 
 > S=19, C=3, O=15, O=15, B=2, Y=25, D=4, O=15, O=15
 >
 > `19 + 3 + 15 + 15 + 2 + 25 + 4 + 15 + 15 = 113`
 
-If your name equals a prime number, please come to the foyer during the interval or after the show, and ask one of the ushers there for a Curious Prize. We will double-check your calculation for you 🙂
+113 is a prime number, so Scooby Doo would win a prize!
 
 ## Check Your Calculation
 
@@ -120,6 +122,8 @@ _Note: Only use characters A-Z (no umlauts, special characters, or numbers). Ent
 
 * * *
 
-_If you use your phone to check if your number is prime, please remember turn it off during the show!_
+_Please remember turn your phone off during the show!_
 
-_*Subject to availability. Your name will be processed locally on your device and not shared on stored anywhere._
+_Your name will be processed locally on your device and not shared on stored anywhere._
+
+_*Subject to availability._
