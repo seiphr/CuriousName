@@ -139,7 +139,7 @@ _Please remember turn your phone off during the show!_
 
 _Your name will be processed locally on your device and not shared on stored anywhere._
 
-_*Subject to availability._
+_*Prizes are subject to availability._
 
 <script>
     const letterToNumber = {
