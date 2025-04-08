@@ -127,3 +127,104 @@ _Please remember turn your phone off during the show!_
 _Your name will be processed locally on your device and not shared on stored anywhere._
 
 _*Subject to availability._
+
+<script>
+    const letterToNumber = {
+        A: 1,
+        B: 2,
+        C: 3,
+        D: 4,
+        E: 5,
+        F: 6,
+        G: 7,
+        H: 8,
+        I: 9,
+        J: 10,
+        K: 11,
+        L: 12,
+        M: 13,
+        N: 14,
+        O: 15,
+        P: 16,
+        Q: 17,
+        R: 18,
+        S: 19,
+        T: 20,
+        U: 21,
+        V: 22,
+        W: 23,
+        X: 24,
+        Y: 25,
+        Z: 26
+    };
+
+    function handleSubmit(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+        
+        // Get the value of the text input field
+        const inputValue = event.target.elements.name.value;
+
+        // Clean the input value of any non A-Z characters
+        const cleanedInputValue = removeNonLetters(inputValue).toUpperCase();
+
+        // Split characters
+        const splitString = cleanedInputValue.split('');
+
+        let sum = 0;
+        splitString.forEach(element => {
+            sum += letterToNumber[element];
+        });
+
+        // Your custom logic here
+        if (isPerfectNumber(sum)) {
+            alert("Your name equals " + sum + "\r\n\r\nWhich is not a prime number. BUT it is a PERFECT NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).\r\nPerfect numbers are really cool. Perfect numbers are positive integers that equal the sum of their proper divisors (excluding itself). For instance, 6 has proper divisors 1, 2, and 3, and 1 + 2 + 3 = 6.");
+        }
+        else if (isPrime(sum)) {
+            alert("Your name equals " + sum + "\r\n\r\nWhich is a PRIME NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).");
+        }
+        else {
+            alert("Your name equals " + sum + "\r\n\r\nWhich is unfortunately not a prime number.");
+        }
+        
+        // Optionally, you can submit the form programmatically
+        // event.target.submit();
+    }
+
+    function removeNonLetters(str) {
+        // Use a regular expression to match and remove non-letter characters
+        return str.replace(/[^a-zA-Z]/g, '');
+    }
+
+    function isPrime(num) {
+        // Check if num is less than 2, which is not prime
+        if (num < 2) return false;
+
+        // Check all numbers from 2 to the square root of num
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            // If num is divisible by any of these numbers, it is not prime
+            if (num % i === 0) return false;
+        }
+
+        // If no divisors are found, num is prime
+        return true;
+    }
+
+    function isPerfectNumber(num) {
+        // A perfect number must be greater than 1
+        if (num <= 1) return false;
+
+        let sum = 0;
+
+        // Loop through all numbers from 1 to num/2
+        for (let i = 1; i <= num / 2; i++) {
+            // If i is a divisor of num, add it to the sum
+            if (num % i === 0) {
+                sum += i;
+            }
+        }
+
+        // Return true if the sum of divisors equals the number, false otherwise
+        return sum === num;
+    }
+</script>
