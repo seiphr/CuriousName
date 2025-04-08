@@ -16,10 +16,9 @@ Prime numbers can only be divided by themselves and 1. 2 is the first prime numb
 
 Give each letter in your name a value from 1 to 26 (`a=1`, `b=2`, etc.)
 
-<!-- Start of the table with custom CSS -->
 <style>
   .custom-table {
-    border: 2px solid black;
+    border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
   }
@@ -30,6 +29,7 @@ Give each letter in your name a value from 1 to 26 (`a=1`, `b=2`, etc.)
   }
   .custom-table th {
     background-color: #f2f2f2;
+    font-weight: bold;
   }
 </style>
 
