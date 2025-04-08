@@ -5,6 +5,7 @@ layout: default
 # Curious Names
 
 > ‘I think prime numbers are like life. They are very logical but you could never work out the rules, even if you spent all your time thinking about them.’
+
 > _Christopher John Francis Boone_
 
 ## Win a Prize if Your Name is a Prime Number!
