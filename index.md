@@ -141,6 +141,9 @@ _Your name will be processed locally on your device and not shared on stored any
 
 _*Prizes are subject to availability._
 
+<!-- Include the canvas-confetti library from a CDN -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
 <script>
     const letterToNumber = {
         A: 1,
@@ -192,16 +195,27 @@ _*Prizes are subject to availability._
         // Display the result text
         var resultDiv = document.getElementById('result');
 
-        if (isPerfectNumber(sum)) {
+        var isPerfectNumber = isPerfectNumber(sum);
+        var isPrimeNumber = isPrime(sum);
+        if (isPerfectNumber) {
             resultDiv.textContent = "Your name equals " + sum + "\r\n\r\nWhich is not a prime number. BUT it is a PERFECT NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).\r\nPerfect numbers are really cool. Perfect numbers are positive integers that equal the sum of their proper divisors (excluding itself). For instance, 6 has proper divisors 1, 2, and 3, and 1 + 2 + 3 = 6.";
         }
-        else if (isPrime(sum)) {
+        else if (isPrimeNumber) {
             resultDiv.textContent = "Your name equals " + sum + "\r\n\r\nWhich is a PRIME NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).";
         }
         else {
             resultDiv.textContent = "Your name equals " + sum + "\r\n\r\nWhich is unfortunately not a prime number.";
         }
         resultDiv.style.display = 'block';
+
+        if (isPrimeNumber || isPerfectNumber) {
+            // Trigger the confetti effect
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
     }
 
     function removeNonLetters(str) {
