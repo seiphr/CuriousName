@@ -228,7 +228,7 @@ _*Prizes are subject to availability._
             resultDiv.textContent = "Your name equals " + sum + " which is a PRIME NUMBER!!!\r\n\r\nTalk to someone from the Front of House team in the foyer to claim your prize (look for the 'ZEST' badge on their shirt).";
         }
         else {
-            resultDiv.textContent = "Your name equals " + sum + " which is unfortunately not a prime number.";
+            resultDiv.textContent = "Your name equals " + sum + " which is unfortunately not a prime number so you don't win a prize this time. Try another maths or science challenge in the foyer and maybe you'll win. Good luck!";
         }
         resultDiv.style.display = 'block';
 
