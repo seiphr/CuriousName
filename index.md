@@ -152,7 +152,7 @@ _Only use characters A-Z (no umlauts or numbers). Special characters will be ign
 
 _Please remember turn your phone off during the show!_
 
-_Your name will be processed locally on your device and not shared on stored anywhere._
+_Your name will be processed locally on your device and not shared, transmitted, passed through any servers, or stored anywhere._
 
 _*Prizes are subject to availability._
 
