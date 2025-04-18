@@ -14,7 +14,7 @@ Prime numbers can only be divided by themselves and 1. 2 is the first prime numb
 
 ## How to Play
 
-Give each letter in your name a value from 1 to 26 (`a=1`, `b=2`, etc.). Ignore any special characters like hyphens `-`.
+Each letter in your name has a value from 1 to 26 (`a=1`, `b=2`, etc.). Ignore any special characters like hyphens `-`.
 
 Add up the numbers and see if they make a prime number. Like `Scooby Doo` (113), or `Sherlock Holmes` (163), or `Doctor Watson` (167).
 
